@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.nav-group {
+  @apply flex items-center space-x-4;
+}
