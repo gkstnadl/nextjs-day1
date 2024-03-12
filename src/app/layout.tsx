@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Nav from "./(components)/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,13 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="nav-group">
-          <Link href="/">home</Link>
-          <Link href="/csr">csr</Link>
-          <Link href="/isr">isr</Link>
-          <Link href="/ssg">ssg</Link>
-          <Link href="/ssr">ssr</Link>
-        </nav>
+        <Nav />
         {children}
       </body>
     </html>
